@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1250px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}

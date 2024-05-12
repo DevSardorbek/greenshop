@@ -1,0 +1,275 @@
+.cart__cantent {
+  margin-top: 92px;
+  .cart__cantent-line {
+    display: flex;
+    gap: 4px;
+    margin-top: 36px;
+    margin-bottom: 50px;
+    color: #3d3d3d;
+    a {
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 16px;
+      color: #3d3d3d;
+      text-align: left;
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+    }
+  }
+  .cart_cantent-wrapper {
+    display: flex;
+    gap: 86px;
+    justify-content: space-between;
+    .cart__cantent-products {
+      width: 100%;
+      .cart__products-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 16px;
+          text-align: left;
+          color: #3d3d3d;
+        }
+        div {
+          display: flex;
+          gap: 100px;
+        }
+      }
+      .cart__products-item {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .cart__item-name {
+          img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+          }
+          display: flex;
+          gap: 14px;
+          align-items: center;
+          h3 {
+            font-family: sans-serif;
+            color: #3d3d3d;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            text-align: left;
+          }
+          p {
+            font-family: Cera Pro;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            color: #727272;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+          }
+        }
+        .cart__item-intro {
+          display: flex;
+          gap: 66px;
+          h3 {
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            text-align: left;
+            color: #727272;
+          }
+          .cart__item-quatity {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            button {
+              padding: 7px 12px;
+              border-radius: 29px;
+              background: linear-gradient(
+                180deg,
+                #46a358 0%,
+                rgba(70, 163, 88, 0.8) 100%
+              );
+              font-family: Cera Pro;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 16px;
+              text-align: left;
+              color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &:disabled {
+                background: linear-gradient(
+                  180deg,
+                  #7aa382 0%,
+                  rgba(113, 180, 127, 0.8) 100%
+                );
+              }
+            }
+            span {
+              font-family: sans-serif;
+              font-size: 17px;
+              font-weight: 400;
+              line-height: 10px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .cart__cantent-total {
+      width: 332px;
+      p {
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #3d3d3d;
+      }
+      .total__search {
+        margin-bottom: 30px;
+        border-radius: 3px;
+        width: 100%;
+        border: 1px solid #46a358;
+        input {
+          border: none;
+          padding: 13px 0 12px 9px;
+          ::placeholder {
+            font-family: Cera Pro;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: left;
+            color: #727272;
+          }
+        }
+        button {
+          background-color: #46a358;
+          padding: 13px 10px;
+          font-family: sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: left;
+          color: #fff;
+        }
+      }
+      .subtotal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        h3 {
+          font-family: sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 16px;
+          text-align: right;
+          color: #3d3d3d;
+        }
+      }
+      .coupon {
+        margin-bottom: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+          font-family: sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 16px;
+          text-align: right;
+          color: #3d3d3d;
+        }
+      }
+      .shiping {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          h3 {
+            font-family: sans-serif;
+            color: #3d3d3d;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 16px;
+            text-align: right;
+          }
+          span {
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            color: #46a358;
+          }
+        }
+      }
+      .total_itm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 29px;
+        h3 {
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: left;
+          color: #3d3d3d;
+        }
+        h2 {
+          color: #46a358;
+          font-family: sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: right;
+        }
+      }
+      .btn1 {
+        width: 100%;
+        padding: 12px 0;
+        background-color: #46a358;
+        border-radius: 3px;
+        a {
+          color: #fff;
+        }
+      }
+      .btn2 {
+        width: 100%;
+        padding: 12px 0;
+        color: black;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #46a358;
+        background-color: transparent;
+        border-radius: 3px;
+        text-align: center;
+      }
+    }
+  }
+}
