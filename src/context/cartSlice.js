@@ -15,14 +15,14 @@ const cartSlice = createSlice({
     incrementCartQuantity(state, action) {
       const index = state.value.findIndex((el) => el.id === action.payload.id);
       state.value = state.value.map((item, inx) => {
-        index == inx ? { ...item, quantity: item.quantity + 1 } : item;
+        return index === inx ? { ...item, quantity: item.quantity + 1 } : item;
       });
       localStorage.setItem("carts", JSON.stringify(state.value));
     },
     decrementCartQuantity(state, action) {
       const index = state.value.findIndex((el) => el.id === action.payload.id);
       state.value = state.value.map((item, inx) => {
-        index == inx ? { ...item, quantity: item.quantity - 1 } : item;
+        return index == inx ? { ...item, quantity: item.quantity - 1 } : item;
       });
       localStorage.setItem("carts", JSON.stringify(state.value));
     },

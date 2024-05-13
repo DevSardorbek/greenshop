@@ -17,6 +17,7 @@
   .chekout__section {
     margin-top: 56px;
     display: flex;
+    gap: 79px;
     .chekout__biling-adress {
       display: flex;
       flex-direction: column;
@@ -80,6 +81,222 @@
           width: 350px;
           resize: none;
           border: 1px solid #eaeaea;
+          outline: none;
+        }
+      }
+    }
+    .chekout__order {
+      width: 400px;
+      .chekout__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #3d3d3d;
+      }
+      .order__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        .order__card {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h3 {
+            font-family: sans-serif;
+            color: #3d3d3d;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            text-align: left;
+          }
+          p {
+            font-family: Cera Pro;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            color: #a5a5a5;
+          }
+          h2 {
+            font-family: Cera Pro;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: right;
+            color: #46a358;
+          }
+          span {
+            font-family: Cera Pro;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: right;
+            color: #a5a5a5;
+          }
+          .order__name {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            img {
+              width: 70px;
+              height: 70px;
+              object-fit: contain;
+            }
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 6px;
+            }
+          }
+        }
+      }
+      .order__count {
+        p {
+          font-family: sans-serif;
+          font-size: 14px;
+          color: #5e5e5e;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: right;
+          span {
+            color: #46a358;
+          }
+        }
+        h4 {
+          font-family: sans-serif;
+          color: #3d3d3d;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: left;
+        }
+        h3 {
+          font-family: Cera Pro;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 16px;
+          text-align: right;
+          color: #3d3d3d;
+        }
+        .order__sub {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+        .order__coupon {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 21px;
+        }
+        .order__shiping {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 17px;
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+          span {
+            font-family: sans-serif;
+            color: #46a358;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+          }
+        }
+      }
+      .order__total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 16px;
+        border-top: 0.3px solid #46a35880;
+        margin-bottom: 46px;
+        h4 {
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: left;
+          color: #3d3d3d;
+        }
+        h3 {
+          font-family: sans-serif;
+          color: #46a358;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: right;
+        }
+      }
+      .payment__method {
+        h3 {
+          font-family: sans-serif;
+          color: #3d3d3d;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: left;
+          margin-bottom: 19px;
+        }
+        .pay_in {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-bottom: 50px;
+          .pay {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 11px;
+            border: 1px solid #eaeaea;
+            border-radius: 4px;
+            p {
+              font-family: sans-serif;
+              font-size: 15px;
+              font-weight: 400;
+              color: #3d3d3d;
+              line-height: 16px;
+            }
+            &:hover {
+              border: 1px solid #46a358;
+            }
+            &:active {
+              border: 1px solid #46a358;
+            }
+          }
+        }
+        button {
+          width: 100%;
+          background-color: #46a358;
+          padding: 12px 0;
+          border-radius: 3px;
+          font-family: sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: left;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          border: 2px solid #46a358;
+          transition: 0.3s;
+          &:hover {
+            background-color: #fff;
+            color: #46a358;
+          }
+          &:active {
+            transform: scale(0.99);
+          }
         }
       }
     }

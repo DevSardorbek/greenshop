@@ -54,6 +54,7 @@
       &:hover {
         .card_wish {
           opacity: 1;
+          transform: translateY(0px);
         }
       }
       p {
@@ -84,6 +85,8 @@
     }
     .card_wish {
       opacity: 0;
+      transition: 0.4s;
+      transform: translateY(20px);
       display: flex;
       gap: 26px;
       align-items: center;

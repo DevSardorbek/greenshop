@@ -56,9 +56,6 @@ const Products = ({ data }) => {
               </div>
               <p>{el.title}</p>
               <h3>${el.price}</h3>
-              {addedToCart[el.id] && (
-                <p>{addedToCart[el.id]} marta savatchada bor</p>
-              )}
             </div>
           ))}
         </div>
